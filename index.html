@@ -579,40 +579,73 @@
       <section class="achievements section" id="achievements" aria-label="Certifications and workshops">
          <div class="achievements__container container">
             <h2 class="section__title">Certifications &amp; <span>Workshops</span></h2>
-            <div class="roman-achievements-grid">
-               <a
-                  href="assets/certificates/from-idea-to-paper-2025.png"
-                  class="roman-achievement-card roman-achievement-card--link"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="View From Idea to Paper certificate"
-               >
-                  <span class="roman-achievement-year">2025</span>
-                  <i class="ri-draft-line"></i>
-                  <h3>From Idea to Paper</h3>
-                  <p>A guided research writing workshop organized by the AIUB Research &amp; Development Club.</p>
-                  <span class="roman-achievement-action">View certificate <i class="ri-external-link-line"></i></span>
-               </a>
-               <article class="roman-achievement-card">
-                  <span class="roman-achievement-year">2025</span>
-                  <i class="ri-brain-line"></i>
-                  <h3>The AI Literacy Workshop</h3>
-                  <p>AI literacy program by the Institute for Global Cooperation Foundation.</p>
-               </article>
-               <a
-                  href="assets/certificates/it-essentials-cisco-2023.pdf"
-                  class="roman-achievement-card roman-achievement-card--link"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="View IT Essentials certificate"
-               >
-                  <span class="roman-achievement-year">2023</span>
-                  <i class="ri-computer-line"></i>
-                  <h3>IT Essentials</h3>
-                  <p>PC Hardware and Software certification from Cisco Networking Academy.</p>
-                  <span class="roman-achievement-action">View certificate <i class="ri-external-link-line"></i></span>
-               </a>
+            <div class="certifications__slider" id="certifications-carousel">
+               <button type="button" class="certifications__button" id="certifications-prev-btn" aria-label="Previous certificates">
+                  <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+               </button>
+               <div class="certifications__viewport" id="certifications-viewport">
+                  <div class="certifications__track" id="certifications-track">
+                     <article class="certifications__slide">
+                        <a href="assets/certificates/from-idea-to-paper-2025.png" class="certifications__card" target="_blank" rel="noopener">
+                           <span class="certifications__number">01</span>
+                           <span class="certifications__year">2025</span>
+                           <i class="ri-draft-line certifications__icon" aria-hidden="true"></i>
+                           <span class="certifications__category">Research Workshop</span>
+                           <h3>From Idea to Paper</h3>
+                           <p>A guided research writing workshop organized by the AIUB Research &amp; Development Club.</p>
+                           <span class="certifications__meta">21 August 2025 · AIUB</span>
+                           <span class="certifications__action">View certificate <i class="ri-external-link-line"></i></span>
+                        </a>
+                     </article>
+
+                     <article class="certifications__slide">
+                        <div class="certifications__card">
+                           <span class="certifications__number">02</span>
+                           <span class="certifications__year">2025</span>
+                           <i class="ri-brain-line certifications__icon" aria-hidden="true"></i>
+                           <span class="certifications__category">AI Workshop</span>
+                           <h3>The AI Literacy Workshop</h3>
+                           <p>AI literacy program by the Institute for Global Cooperation Foundation.</p>
+                           <span class="certifications__meta">November 2025 · IGC Foundation</span>
+                           <span class="certifications__action certifications__action--muted">Workshop completed</span>
+                        </div>
+                     </article>
+
+                     <article class="certifications__slide">
+                        <a href="assets/certificates/it-essentials-cisco-2023.pdf" class="certifications__card" target="_blank" rel="noopener">
+                           <span class="certifications__number">03</span>
+                           <span class="certifications__year">2023</span>
+                           <i class="ri-computer-line certifications__icon" aria-hidden="true"></i>
+                           <span class="certifications__category">Cisco Certification</span>
+                           <h3>IT Essentials</h3>
+                           <p>PC hardware, software, operating systems, maintenance, and technical troubleshooting fundamentals.</p>
+                           <span class="certifications__meta">June 2023 · Cisco Networking Academy</span>
+                           <span class="certifications__action">View certificate <i class="ri-external-link-line"></i></span>
+                        </a>
+                     </article>
+
+                     <article class="certifications__slide">
+                        <a href="assets/certificates/code-to-cloud-devops-aws-2026.pdf" class="certifications__card" target="_blank" rel="noopener">
+                           <span class="certifications__number">04</span>
+                           <span class="certifications__year">2026</span>
+                           <i class="ri-cloud-line certifications__icon" aria-hidden="true"></i>
+                           <span class="certifications__category">Cloud &amp; DevOps Workshop</span>
+                           <h3>Code to Cloud: Practical DevOps with AWS</h3>
+                           <p>Hands-on exposure to DevOps fundamentals, AWS services, deployment workflows, cloud infrastructure, and CI/CD pipelines.</p>
+                           <p class="certifications__note">With thanks to Md. Manjur-E-Khuda and the Cloudly Infotech Limited team for the valuable learning opportunity.</p>
+                           <span class="certifications__meta">29 April 2026 · AIUB Computer Club × Cloudly Infotech Limited</span>
+                           <span class="certifications__action">View certificate <i class="ri-external-link-line"></i></span>
+                        </a>
+                     </article>
+                  </div>
+               </div>
+               <button type="button" class="certifications__button" id="certifications-next-btn" aria-label="Next certificates">
+                  <i class="ri-arrow-right-s-line" aria-hidden="true"></i>
+               </button>
             </div>
+            <p class="certifications__counter" id="certifications-counter">01-02 / 04</p>
+            <div class="certifications__dots" id="certifications-dots"></div>
+            <p class="certifications__hint">Select a card to view its certificate</p>
          </div>
       </section>
 
@@ -660,5 +693,6 @@
    <script defer src="assets/js/controllers/ProjectsController.js?v=7"></script>
    <script defer src="assets/js/controllers/ProjectModalController.js?v=roman-1"></script>
    <script defer src="assets/js/controllers/ServicesController.js?v=1"></script>
+   <script defer src="assets/js/controllers/CertificationsController.js?v=1"></script>
 </body>
 </html>
