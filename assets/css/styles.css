@@ -744,7 +744,15 @@ img {
 
 @media screen and (min-width: 768px) {
   .home__container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
+    gap: 2rem;
+  }
+
+  .home__name {
+    width: max-content;
+    max-width: none;
+    white-space: nowrap;
+    font-size: clamp(2.25rem, 4.2vw, 4rem);
   }
 
   .home__image {
