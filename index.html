@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Roman Sheikh Razan - CSE student, full-stack web developer, and software engineering enthusiast.">
+   <meta name="author" content="Roman Sheikh Razan">
+   <meta name="theme-color" content="#8b6cef">
+   <meta property="og:title" content="Roman Sheikh Razan | Portfolio">
+   <meta property="og:description" content="Projects, skills, education, and achievements of Roman Sheikh Razan.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://romanrazan.github.io/Roman_Portfolio/">
+   <meta property="og:image" content="assets/img/roman-profile.png">
+   <link rel="canonical" href="https://romanrazan.github.io/Roman_Portfolio/">
+   <title>Roman Sheikh Razan | CSE Student &amp; Full-Stack Developer</title>
+
+   <link rel="icon" href="assets/img/roman-profile.png" type="image/png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Unbounded:wght@200..900&amp;display=swap">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+   <link rel="stylesheet" href="assets/css/styles.css?v=roman-1">
+   <script>
+      (function () {
+         var stored = localStorage.getItem('roman-portfolio-theme');
+         var theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
+         document.documentElement.setAttribute('data-theme', theme);
+      })();
+   </script>
+</head>
+<body>
+   <a href="#main-content" class="skip-link">Skip to main content</a>
+   <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress__bar" id="scroll-progress-bar"></div>
+   </div>
+   <div class="cursor" id="cursor" aria-hidden="true"></div>
+   <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#home" class="nav__logo" aria-label="Roman - home">Roman</a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="#about" class="nav__link">About</a></li>
+               <li><a href="#projects" class="nav__link">Projects</a></li>
+               <li><a href="#journey" class="nav__link">Journey</a></li>
+               <li><a href="#technologies" class="nav__link">Technologies</a></li>
+               <li><a href="#achievements" class="nav__link">Achievements</a></li>
+               <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="nav__close" id="nav-close" type="button" aria-label="Close menu">
+               <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+         </div>
+
+         <div class="nav__actions">
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">
+               <span class="theme-toggle__sun"><i class="ri-sun-line" aria-hidden="true"></i></span>
+               <span class="theme-toggle__moon"><i class="ri-moon-line" aria-hidden="true"></i></span>
+            </button>
+            <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+               <i class="ri-menu-4-line" aria-hidden="true"></i>
+            </button>
+         </div>
+      </nav>
+   </header>
+
+   <main id="main-content">
+      <section class="home section" id="home" aria-label="Introduction">
+         <div class="home__container container grid">
+            <div class="home__data">
+               <p class="home__greeting">Hello, I am</p>
+               <h1 class="home__name" id="home-split">Roman Sheikh Razan</h1>
+               <h2 class="home__profession">
+                  <span id="home-typing" data-words='["CSE Student","Full-Stack Web Developer","Software Engineering Enthusiast","AI &amp; ML Learner"]'>CSE Student</span>
+                  <span id="home-typing-cursor" class="home__typing-cursor" aria-hidden="true">|</span>
+               </h2>
+               <p class="home__description">
+                  I build practical software and web applications that solve real problems,
+                  with a growing focus on full-stack development, software quality, AI, and machine learning.
+               </p>
+               <div class="home__buttons">
+                  <a href="#projects" class="button">Explore My Work <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                  <a href="assets/Roman-Sheikh-Razan-Resume.pdf" class="button button--ghost" target="_blank">View Resume</a>
+               </div>
+               <div class="home__social">
+                  <a href="https://www.linkedin.com/in/roman-sheikh-razan-2b82a3399/" target="_blank" rel="noopener" class="home__social-link" aria-label="LinkedIn">
+                     <i class="ri-linkedin-box-line" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://github.com/romanrazan" target="_blank" rel="noopener" class="home__social-link" aria-label="GitHub">
+                     <i class="ri-github-line" aria-hidden="true"></i>
+                  </a>
+                  <a href="mailto:romanrazan2004@gmail.com" class="home__social-link" aria-label="Email">
+                     <i class="ri-mail-line" aria-hidden="true"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="home__image">
+               <div class="home__blob">
+                  <img src="assets/img/roman-profile.png" alt="Roman Sheikh Razan" class="home__perfil roman-profile">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="about section" id="about" aria-label="About">
+         <div class="about__container container">
+            <h2 class="section__title">About <span>Me</span></h2>
+            <p class="about__description">
+               I am a dedicated Computer Science and Engineering student at American International
+               University-Bangladesh. I enjoy turning ideas into efficient, user-focused software and
+               continuously strengthening my skills across web development, databases, desktop systems,
+               artificial intelligence, and machine learning. I bring critical thinking, teamwork, and
+               a practical problem-solving mindset to every project.
+            </p>
+
+            <div class="about__resume-actions">
+               <a href="assets/Roman-Sheikh-Razan-Resume.pdf" class="button" target="_blank">
+                  <i class="ri-file-text-line" aria-hidden="true"></i> View Resume
+               </a>
+               <a href="assets/Roman-Sheikh-Razan-Resume.pdf" class="button button--ghost" download>
+                  <i class="ri-download-line" aria-hidden="true"></i> Download CV
+               </a>
+            </div>
+
+            <div class="about__skills">
+               <a href="#journey" class="about__skill about__skill--link">
+                  <h3>3.43</h3><span>Current CGPA</span>
+               </a>
+               <a href="#projects" class="about__skill about__skill--link">
+                  <h3>7</h3><span>Public Repositories</span>
+               </a>
+               <a href="#technologies" class="about__skill about__skill--link">
+                  <h3>15+</h3><span>Technologies &amp; Tools</span>
+               </a>
+               <a href="#journey" class="about__skill about__skill--link">
+                  <h3>11th</h3><span>Current Semester</span>
+               </a>
+            </div>
+         </div>
+      </section>
+
+      <section class="projects section" id="projects" aria-label="Projects">
+         <div class="projects__container container">
+            <h2 class="section__title">Selected <span>Projects</span></h2>
+
+            <div class="projects__filters" id="projects-filters" role="tablist" aria-label="Project categories">
+               <button type="button" class="projects__filter projects__filter-active" data-filter="all" role="tab" aria-selected="true">All</button>
+               <button type="button" class="projects__filter" data-filter="web" role="tab" aria-selected="false">Web</button>
+               <button type="button" class="projects__filter" data-filter="software" role="tab" aria-selected="false">Software</button>
+               <button type="button" class="projects__filter" data-filter="database" role="tab" aria-selected="false">Database</button>
+               <button type="button" class="projects__filter" data-filter="graphics" role="tab" aria-selected="false">Graphics</button>
+            </div>
+
+            <div class="projects__slider" id="projects-carousel">
+               <div class="projects__viewport" id="projects-viewport">
+                  <div class="projects__track" id="projects-track">
+                     <article class="projects__slide" data-category="web" data-project-id="01">
+                        <div class="projects__card">
+                           <div class="projects__image">
+                              <img src="assets/img/project-computer-shop.svg" alt="Online Computer Shop project" class="projects__img">
+                           </div>
+                           <div class="projects__content">
+                              <span class="projects__subtitle">Full-Stack Web Application</span>
+                              <h3 class="projects__title">Online Computer Shop</h3>
+                              <p class="projects__description">E-commerce platform with authentication, products, cart, reviews, orders, AJAX search, and secure CRUD.</p>
+                              <div class="projects__buttons">
+                                 <button type="button" class="projects__details-btn" data-project-id="01">Details</button>
+                                 <a href="https://github.com/romanrazan/Web_Tech_Project_Online_Computer_Shop" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="projects__slide" data-category="software" data-project-id="02">
+                        <div class="projects__card">
+                           <div class="projects__image">
+                              <img src="assets/img/project-github.svg" alt="SkillBridge project" class="projects__img">
+                           </div>
+                           <div class="projects__content">
+                              <span class="projects__subtitle">Software Quality &amp; Testing</span>
+                              <h3 class="projects__title">SkillBridge</h3>
+                              <p class="projects__description">A micro-freelancing platform for university students, developed with Agile Scrum and a quality-assurance focus.</p>
+                              <div class="projects__buttons">
+                                 <button type="button" class="projects__details-btn" data-project-id="02">Details</button>
+                                 <a href="https://github.com/romanrazan/SQT_SkillBridge-A-Micro-Freelancing-Platform-for-University-Students" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="projects__slide" data-category="software" data-project-id="03">
+                        <div class="projects__card">
+                           <div class="projects__image">
+                              <img src="assets/img/project-agritech.svg" alt="Shop Management System project" class="projects__img">
+                           </div>
+                           <div class="projects__content">
+                              <span class="projects__subtitle">C# Desktop Application</span>
+                              <h3 class="projects__title">Shop Management System</h3>
+                              <p class="projects__description">Desktop system for inventory, sales, customers, billing, authentication, and automated reporting.</p>
+                              <div class="projects__buttons">
+                                 <button type="button" class="projects__details-btn" data-project-id="03">Details</button>
+                                 <a href="https://github.com/romanrazan/C-Sharp-Project-Shop-Management-" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="projects__slide" data-category="graphics" data-project-id="04">
+                        <div class="projects__card">
+                           <div class="projects__image">
+                              <img src="assets/img/project-3d.svg" alt="Train Journey Simulation project" class="projects__img">
+                           </div>
+                           <div class="projects__content">
+                              <span class="projects__subtitle">Computer Graphics</span>
+                              <h3 class="projects__title">Train Journey Simulation</h3>
+                              <p class="projects__description">Animated countryside journey with moving vehicles, scenic elements, and day-to-night transitions.</p>
+                              <div class="projects__buttons">
+                                 <button type="button" class="projects__details-btn" data-project-id="04">Details</button>
+                                 <a href="https://github.com/romanrazan/Computer-Graphics-Project-Journey-By-Train-" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="projects__slide" data-category="database" data-project-id="05">
+                        <div class="projects__card">
+                           <div class="projects__image">
+                              <img src="assets/img/project-course.svg" alt="Train Ticket Reservation System project" class="projects__img">
+                           </div>
+                           <div class="projects__content">
+                              <span class="projects__subtitle">Database Management</span>
+                              <h3 class="projects__title">Train Ticket Reservation</h3>
+                              <p class="projects__description">Database-driven booking, cancellation, seat, passenger, train, and reservation management system.</p>
+                              <div class="projects__buttons">
+                                 <button type="button" class="projects__details-btn" data-project-id="05">Details</button>
+                                 <a href="https://github.com/romanrazan/Database_Project-The-Online-Train-Reservation-System-" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="projects__slide" data-category="software" data-project-id="06">
+                        <div class="projects__card">
+                           <div class="projects__image">
+                              <img src="assets/img/project-mobile-shop.svg" alt="Computer Accessories Shop project" class="projects__img">
+                           </div>
+                           <div class="projects__content">
+                              <span class="projects__subtitle">Java OOP Application</span>
+                              <h3 class="projects__title">Computer Accessories Shop</h3>
+                              <p class="projects__description">Java Swing application with authentication, dashboards, products, orders, payments, and custom PC Builder.</p>
+                              <div class="projects__buttons">
+                                 <button type="button" class="projects__details-btn" data-project-id="06">Details</button>
+                                 <a href="https://github.com/romanrazan/Computer-Accessories-Shop" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="projects__slide" data-category="web" data-project-id="07">
+                        <div class="projects__card">
+                           <div class="projects__image">
+                              <img src="assets/img/project-github.svg" alt="More projects on GitHub" class="projects__img">
+                           </div>
+                           <div class="projects__content">
+                              <span class="projects__subtitle">Open Source Profile</span>
+                              <h3 class="projects__title">More on GitHub</h3>
+                              <p class="projects__description">Explore all seven public repositories and follow my continuing development work.</p>
+                              <div class="projects__buttons">
+                                 <button type="button" class="projects__details-btn" data-project-id="07">Details</button>
+                                 <a href="https://github.com/romanrazan?tab=repositories" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+
+               <div class="projects__navigation">
+                  <button type="button" class="projects__arrow" id="projects-prev-btn" aria-label="Previous projects"><i class="ri-arrow-left-line"></i></button>
+                  <span class="projects__counter" id="projects-counter">01-02 / 07</span>
+                  <div class="projects__dots" id="projects-dots"></div>
+                  <button type="button" class="projects__arrow" id="projects-next-btn" aria-label="Next projects"><i class="ri-arrow-right-line"></i></button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <script type="application/json" id="projects-modal-data">
+      [
+         {
+            "id": "01",
+            "plain_title": "Online Computer Shop",
+            "category": "Full-Stack Web",
+            "image": "assets/img/project-computer-shop.svg",
+            "image_alt": "Online Computer Shop",
+            "features": ["Secure authentication and session management", "Product, cart, review, and order workflows", "Dynamic search and filtering with AJAX and JSON", "Responsive interface and MVC-based organization"],
+            "metrics": [{"value": "6", "label": "Core Workflows"}, {"value": "Full", "label": "Stack"}, {"value": "MVC", "label": "Pattern"}],
+            "tech_stack": ["HTML", "CSS", "JavaScript", "PHP", "AJAX", "MySQL"],
+            "challenges": ["Designing secure CRUD operations", "Maintaining a normalized product and order database", "Creating fast interactions without full-page reloads"],
+            "github_url": "https://github.com/romanrazan/Web_Tech_Project_Online_Computer_Shop",
+            "link_text": "View on GitHub"
+         },
+         {
+            "id": "02",
+            "plain_title": "SkillBridge",
+            "category": "Software Quality & Testing",
+            "image": "assets/img/project-github.svg",
+            "image_alt": "SkillBridge micro-freelancing platform",
+            "features": ["Micro-freelancing concept for university students", "Agile Scrum planning and documentation", "Test-case design, bug tracking, and quality reporting", "UI/UX prototyping and version control"],
+            "metrics": [{"value": "Agile", "label": "Method"}, {"value": "QA", "label": "Focus"}, {"value": "2", "label": "Tracking Tools"}],
+            "tech_stack": ["Jira", "Trello", "Figma", "Git", "Software Testing"],
+            "challenges": ["Translating requirements into testable behavior", "Maintaining clear quality documentation", "Coordinating work through Scrum practices"],
+            "github_url": "https://github.com/romanrazan/SQT_SkillBridge-A-Micro-Freelancing-Platform-for-University-Students",
+            "link_text": "View on GitHub"
+         },
+         {
+            "id": "03",
+            "plain_title": "Shop Management System",
+            "category": "Desktop Software",
+            "image": "assets/img/project-agritech.svg",
+            "image_alt": "Shop Management System",
+            "features": ["Inventory, sales, customer, and billing management", "Secure authentication and database-backed CRUD", "Sales reporting and daily-operation automation", "User-friendly desktop interface"],
+            "metrics": [{"value": "4", "label": "Business Areas"}, {"value": "OOP", "label": "Design"}, {"value": "SQL", "label": "Storage"}],
+            "tech_stack": ["C#", ".NET Framework", "SQL Server", "OOP"],
+            "challenges": ["Keeping inventory and sales data consistent", "Building reusable object-oriented components", "Designing efficient desktop workflows"],
+            "github_url": "https://github.com/romanrazan/C-Sharp-Project-Shop-Management-",
+            "link_text": "View on GitHub"
+         },
+         {
+            "id": "04",
+            "plain_title": "Train Journey Simulation",
+            "category": "Computer Graphics",
+            "image": "assets/img/project-3d.svg",
+            "image_alt": "Train Journey Simulation",
+            "features": ["Animated train journey through a countryside environment", "Moving clouds, ships, speedboats, and train elements", "Day-to-night visual transitions", "Mountains, river, castle, and lighthouse scenery"],
+            "metrics": [{"value": "2D", "label": "Animation"}, {"value": "Real-time", "label": "Motion"}, {"value": "Day/Night", "label": "Scenes"}],
+            "tech_stack": ["C++", "OpenGL", "GLUT", "Computer Graphics"],
+            "challenges": ["Coordinating multiple animation timelines", "Applying transformations to complex scenes", "Maintaining smooth real-time rendering"],
+            "github_url": "https://github.com/romanrazan/Computer-Graphics-Project-Journey-By-Train-",
+            "link_text": "View on GitHub"
+         },
+         {
+            "id": "05",
+            "plain_title": "Online Train Ticket Reservation System",
+            "category": "Database",
+            "image": "assets/img/project-course.svg",
+            "image_alt": "Online Train Ticket Reservation System",
+            "features": ["Ticket booking and cancellation", "Passenger, train, seat, and reservation records", "Relational schema with optimized queries", "Automated reservation workflows"],
+            "metrics": [{"value": "5", "label": "Core Entities"}, {"value": "2", "label": "Database Systems"}, {"value": "SQL", "label": "Driven"}],
+            "tech_stack": ["Oracle SQL Express", "MySQL", "Database Design", "SQL"],
+            "challenges": ["Preserving seat and reservation integrity", "Designing normalized relational data", "Reducing manual booking operations"],
+            "github_url": "https://github.com/romanrazan/Database_Project-The-Online-Train-Reservation-System-",
+            "link_text": "View on GitHub"
+         },
+         {
+            "id": "06",
+            "plain_title": "Computer Accessories Shop",
+            "category": "Java Software",
+            "image": "assets/img/project-mobile-shop.svg",
+            "image_alt": "Computer Accessories Shop",
+            "features": ["Admin and customer dashboards", "Product, category, and order management", "Interactive custom PC Builder", "Authentication and payment workflows"],
+            "metrics": [{"value": "2", "label": "User Roles"}, {"value": "OOP", "label": "Architecture"}, {"value": "GUI", "label": "Interface"}],
+            "tech_stack": ["Java", "Swing", "OOP"],
+            "challenges": ["Modeling shop operations through classes", "Building an intuitive Swing interface", "Connecting product selection to order workflows"],
+            "github_url": "https://github.com/romanrazan/Computer-Accessories-Shop",
+            "link_text": "View on GitHub"
+         },
+         {
+            "id": "07",
+            "plain_title": "Roman Sheikh Razan on GitHub",
+            "category": "Project Collection",
+            "image": "assets/img/project-github.svg",
+            "image_alt": "Roman Sheikh Razan GitHub projects",
+            "features": ["Seven public repositories", "Web, Java, C#, database, graphics, and testing work", "Academic and practical software projects", "Continuously updated development profile"],
+            "metrics": [{"value": "7", "label": "Public Repos"}, {"value": "6", "label": "Project Areas"}, {"value": "2026", "label": "Current"}],
+            "tech_stack": ["PHP", "Java", "C#", "C++", "SQL", "HTML"],
+            "challenges": ["Growing projects across multiple technical domains", "Improving documentation and code quality", "Turning academic work into portfolio-ready software"],
+            "github_url": "https://github.com/romanrazan?tab=repositories",
+            "link_text": "All Repositories"
+         }
+      ]
+      </script>
+
+      <div class="project-modal" id="project-modal" hidden aria-hidden="true">
+         <div class="project-modal__backdrop" data-modal-close></div>
+         <div class="project-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+            <button type="button" class="project-modal__close" data-modal-close aria-label="Close project details">
+               <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+            <div class="project-modal__hero">
+               <img src="" alt="" class="project-modal__img" id="project-modal-img" loading="lazy" decoding="async">
+               <div class="project-modal__hero-overlay">
+                  <span class="project-modal__category" id="project-modal-category"></span>
+                  <h3 class="project-modal__title" id="project-modal-title"></h3>
+               </div>
+            </div>
+            <div class="project-modal__body">
+               <section class="project-modal__section">
+                  <h4 class="project-modal__section-title"><i class="ri-star-line" aria-hidden="true"></i> Features</h4>
+                  <ul class="project-modal__list" id="project-modal-features"></ul>
+               </section>
+               <section class="project-modal__section">
+                  <h4 class="project-modal__section-title"><i class="ri-bar-chart-box-line" aria-hidden="true"></i> Project Snapshot</h4>
+                  <div class="project-modal__metrics" id="project-modal-metrics"></div>
+               </section>
+               <section class="project-modal__section">
+                  <h4 class="project-modal__section-title"><i class="ri-code-box-line" aria-hidden="true"></i> Technologies</h4>
+                  <div class="project-modal__tags" id="project-modal-tech"></div>
+               </section>
+               <section class="project-modal__section">
+                  <h4 class="project-modal__section-title"><i class="ri-lightbulb-line" aria-hidden="true"></i> Development Focus</h4>
+                  <ul class="project-modal__list" id="project-modal-challenges"></ul>
+               </section>
+               <div class="project-modal__footer" id="project-modal-footer" hidden>
+                  <a href="" class="project-modal__github" id="project-modal-github" target="_blank" rel="noopener">
+                     <i class="ri-github-fill" aria-hidden="true"></i>
+                     <span id="project-modal-github-text">View on GitHub</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <section class="work section" id="journey" aria-label="Education and journey">
+         <div class="work__container container">
+            <h2 class="section__title">Education <span>Journey</span></h2>
+            <div class="work__list">
+               <article class="work__card">
+                  <span class="work__number">01</span>
+                  <h3 class="work__title">BSc Computer Science &amp; Engineering</h3>
+                  <p class="work__description">American International University-Bangladesh (AIUB)<br>2023 - Present | CGPA 3.43/4.00 | 11th Semester</p>
+               </article>
+               <article class="work__card">
+                  <span class="work__number">02</span>
+                  <h3 class="work__title">Higher Secondary Certificate</h3>
+                  <p class="work__description">Mirpur College, Dhaka<br>2019 - 2021 | GPA 4.33/5.00</p>
+               </article>
+               <article class="work__card">
+                  <span class="work__number">03</span>
+                  <h3 class="work__title">Secondary School Certificate</h3>
+                  <p class="work__description">Dhanmondi Govt. Boys High School<br>2014 - 2019 | GPA 3.94/5.00</p>
+               </article>
+            </div>
+         </div>
+      </section>
+
+      <section class="services section" id="services" aria-label="What I offer">
+         <div class="services__container container">
+            <h2 class="section__title">What I <span>Offer</span></h2>
+            <div class="services__accordion" id="services-accordion">
+               <article class="services__item services__item-active">
+                  <div class="services__header">
+                     <div><span class="services__number">01</span><h3 class="services__title">Full-Stack Web Development</h3></div>
+                     <i class="ri-subtract-line services__icon"></i>
+                  </div>
+                  <div class="services__content"><p>Responsive websites and database-backed applications using HTML, CSS, JavaScript, PHP, AJAX, JSON, and MySQL.</p></div>
+               </article>
+               <article class="services__item">
+                  <div class="services__header">
+                     <div><span class="services__number">02</span><h3 class="services__title">Software &amp; Database Systems</h3></div>
+                     <i class="ri-add-line services__icon"></i>
+                  </div>
+                  <div class="services__content"><p>Desktop and data-driven systems using Java, C#, .NET, SQL Server, Oracle Database, MySQL, OOP, and UML.</p></div>
+               </article>
+               <article class="services__item">
+                  <div class="services__header">
+                     <div><span class="services__number">03</span><h3 class="services__title">Quality, Prototyping &amp; Technical Support</h3></div>
+                     <i class="ri-add-line services__icon"></i>
+                  </div>
+                  <div class="services__content"><p>Test planning, bug tracking, documentation, UI/UX prototyping, collaborative version control, and technical problem-solving.</p></div>
+               </article>
+            </div>
+         </div>
+      </section>
+
+      <section class="tech section" id="technologies" aria-label="Technologies and tools">
+         <div class="tech__container container">
+            <h2 class="section__title">Technologies &amp; <span>Tools</span></h2>
+            <div class="tech__stats">
+               <article class="tech__stat"><h3 class="tech__stat-value">5</h3><span class="tech__stat-label">Programming Languages</span></article>
+               <article class="tech__stat"><h3 class="tech__stat-value">3</h3><span class="tech__stat-label">Database Platforms</span></article>
+               <article class="tech__stat"><h3 class="tech__stat-value">6</h3><span class="tech__stat-label">Core Web Skills</span></article>
+               <article class="tech__stat"><h3 class="tech__stat-value">10+</h3><span class="tech__stat-label">Engineering Tools</span></article>
+            </div>
+
+            <div class="roman-tech-grid">
+               <article class="roman-tech-card"><i class="ri-code-s-slash-line"></i><h3>Programming</h3><p>Python, PHP, Java, C++, C#</p></article>
+               <article class="roman-tech-card"><i class="ri-global-line"></i><h3>Web Development</h3><p>HTML, CSS, JavaScript, AJAX, JSON, responsive design</p></article>
+               <article class="roman-tech-card"><i class="ri-database-2-line"></i><h3>Databases</h3><p>MySQL, Oracle Database, Microsoft SQL Server</p></article>
+               <article class="roman-tech-card"><i class="ri-tools-line"></i><h3>Development</h3><p>Git, GitHub, Google Colab, Jira, Trello</p></article>
+               <article class="roman-tech-card"><i class="ri-palette-line"></i><h3>Design</h3><p>Figma, Canva, UML, AutoCAD</p></article>
+               <article class="roman-tech-card"><i class="ri-file-list-3-line"></i><h3>Productivity</h3><p>Word, Excel, PowerPoint, Overleaf, Multisim</p></article>
+            </div>
+         </div>
+      </section>
+
+      <section class="achievements section" id="achievements" aria-label="Certifications and workshops">
+         <div class="achievements__container container">
+            <h2 class="section__title">Certifications &amp; <span>Workshops</span></h2>
+            <div class="roman-achievements-grid">
+               <article class="roman-achievement-card">
+                  <span class="roman-achievement-year">2025</span>
+                  <i class="ri-draft-line"></i>
+                  <h3>From Idea to Paper</h3>
+                  <p>A guided research writing workshop organized by the AIUB Research &amp; Development Club.</p>
+               </article>
+               <article class="roman-achievement-card">
+                  <span class="roman-achievement-year">2025</span>
+                  <i class="ri-brain-line"></i>
+                  <h3>The AI Literacy Workshop</h3>
+                  <p>AI literacy program by the Institute for Global Cooperation Foundation.</p>
+               </article>
+               <article class="roman-achievement-card">
+                  <span class="roman-achievement-year">2023</span>
+                  <i class="ri-computer-line"></i>
+                  <h3>IT Essentials</h3>
+                  <p>PC Hardware and Software certification from Cisco Networking Academy.</p>
+               </article>
+            </div>
+         </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-label="Contact">
+         <div class="contact__container container grid">
+            <div class="contact__data">
+               <h2 class="section__title contact__title-left">Contact <span>Me</span></h2>
+               <p class="contact__description">Have a project, internship, collaboration, or technical idea in mind? Let us talk.</p>
+               <button type="button" class="button" id="copy-email" data-email="romanrazan2004@gmail.com" data-default-label="Copy email" aria-pressed="false">
+                  <i class="ri-file-copy-line"></i><span class="contact__button-text">Copy email</span>
+               </button>
+               <p id="copy-email-status" class="contact__copy-status" aria-live="polite"></p>
+            </div>
+
+            <div class="contact__info">
+               <article class="contact__card"><h3 class="contact__title">Email</h3><p class="contact__address">romanrazan2004@gmail.com</p></article>
+               <article class="contact__card"><h3 class="contact__title">Phone</h3><a href="tel:+8801400337927" class="contact__link">+880 1400-337927</a></article>
+               <article class="contact__card"><h3 class="contact__title">Location</h3><p class="contact__address">Kuratoli, Khilkhet, Dhaka, Bangladesh</p></article>
+               <article class="contact__card">
+                  <h3 class="contact__title">Connect</h3>
+                  <a href="https://www.linkedin.com/in/roman-sheikh-razan-2b82a3399/" target="_blank" rel="noopener" class="contact__link">LinkedIn</a>
+                  <a href="https://github.com/romanrazan" target="_blank" rel="noopener" class="contact__link">GitHub</a>
+               </article>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer">
+      <div class="footer__container container">
+         <a href="#home" class="footer__logo">Roman</a>
+         <p class="footer__copy">&copy; 2026 Roman Sheikh Razan. Built around curiosity, quality, and useful software.</p>
+      </div>
+   </footer>
+
+   <script defer src="assets/js/scrollreveal.min.js"></script>
+   <script defer src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+   <script defer src="assets/js/controllers/ThemeController.js?v=3"></script>
+   <script defer src="assets/js/controllers/ContactCopyController.js?v=45"></script>
+   <script defer src="assets/js/controllers/AppController.js?v=45"></script>
+   <script defer src="assets/js/controllers/HomeTypingController.js?v=2"></script>
+   <script defer src="assets/js/controllers/ProjectsController.js?v=7"></script>
+   <script defer src="assets/js/controllers/ProjectModalController.js?v=roman-1"></script>
+   <script defer src="assets/js/controllers/ServicesController.js?v=1"></script>
+</body>
+</html>

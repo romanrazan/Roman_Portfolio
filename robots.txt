@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://romanrazan.github.io/Roman_Portfolio/sitemap.xml
