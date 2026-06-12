@@ -2218,13 +2218,15 @@ body.project-modal-open {
 .services__accordion {
   display: grid;
   gap: 1rem;
-  max-width: 800px;
+  max-width: 960px;
   margin-inline: auto;
 }
 
 .services__item {
-  border-radius: .75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
   overflow: hidden;
+  background: var(--container-color);
 }
 
 .services__header {
@@ -2232,7 +2234,7 @@ body.project-modal-open {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1.25rem 1.5rem;
+  padding: 1.45rem 1.7rem;
   cursor: pointer;
   background: transparent;
   border: none;
@@ -2244,7 +2246,7 @@ body.project-modal-open {
 }
 
 .services__title {
-  font-size: var(--h3-font-size);
+  font-size: clamp(1.05rem, 2vw, 1.45rem);
   pointer-events: none;
 }
 
@@ -2275,7 +2277,7 @@ body.project-modal-open {
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows var(--motion-slow) var(--ease-smooth);
-  padding: 0 1.5rem;
+  padding: 0 1.7rem;
 }
 
 .services__content-inner {
@@ -2294,19 +2296,20 @@ body.project-modal-open {
 
 .services__item-active .services__content {
   grid-template-rows: 1fr;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.7rem;
 }
 
 .services__description {
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  font-size: var(--small-font-size);
+  max-width: 52rem;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  font-size: var(--normal-font-size);
 }
 
 .services__subtitle {
-  font-size: var(--smaller-font-size);
+  font-size: var(--small-font-size);
   color: var(--first-color);
-  margin-bottom: .45rem;
+  margin: 1.15rem 0 .6rem;
   text-transform: uppercase;
   letter-spacing: .06em;
 }
@@ -2359,6 +2362,48 @@ body.project-modal-open {
   border: 1px solid var(--border-color);
   border-radius: .4rem;
   line-height: 1.35;
+}
+
+.services__focus-list {
+  gap: .45rem;
+  margin-bottom: 1.15rem;
+}
+
+.services__focus-list li {
+  padding-left: 1rem;
+  font-size: var(--small-font-size);
+}
+
+.services__focus-list li::before {
+  content: "";
+  top: .65em;
+  width: .25rem;
+  height: .25rem;
+  border-radius: 50%;
+  background: var(--first-color);
+}
+
+.services__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+}
+
+.services__tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: .5rem .8rem;
+  color: var(--title-color);
+  background: hsla(240, 8%, 16%, .7);
+  border: 1px solid var(--border-color);
+  border-radius: .55rem;
+  font-size: var(--small-font-size);
+  line-height: 1.35;
+}
+
+[data-theme="light"] .services__tags span {
+  background: #f7f7fa;
 }
 
 /*=============== TECHNOLOGIES & TOOLS ===============*/

@@ -23,6 +23,10 @@
             const isTarget = item === target
             item.classList.toggle('services__item-active', isTarget)
             setIcon(item, isTarget)
+            item.querySelector('.services__header')?.setAttribute(
+               'aria-expanded',
+               isTarget ? 'true' : 'false'
+            )
          })
       }
 
@@ -31,6 +35,7 @@
          if (isActive) {
             target.classList.remove('services__item-active')
             setIcon(target, false)
+            target.querySelector('.services__header')?.setAttribute('aria-expanded', 'false')
          } else {
             openItem(target)
          }
