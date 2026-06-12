@@ -155,142 +155,152 @@
             <div class="projects__filters" id="projects-filters" role="tablist" aria-label="Project categories">
                <button type="button" class="projects__filter projects__filter-active" data-filter="all" role="tab" aria-selected="true">All</button>
                <button type="button" class="projects__filter" data-filter="web" role="tab" aria-selected="false">Web</button>
-               <button type="button" class="projects__filter" data-filter="software" role="tab" aria-selected="false">Software</button>
+               <button type="button" class="projects__filter" data-filter="java" role="tab" aria-selected="false">Java</button>
                <button type="button" class="projects__filter" data-filter="database" role="tab" aria-selected="false">Database</button>
                <button type="button" class="projects__filter" data-filter="graphics" role="tab" aria-selected="false">Graphics</button>
+               <button type="button" class="projects__filter" data-filter="software" role="tab" aria-selected="false">Software</button>
             </div>
 
             <div class="projects__slider" id="projects-carousel">
+               <button type="button" class="projects__button" id="projects-prev-btn" aria-label="Previous projects">
+                  <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+               </button>
                <div class="projects__viewport" id="projects-viewport">
                   <div class="projects__track" id="projects-track">
-                     <article class="projects__slide" data-category="web" data-project-id="01">
+                     <article class="projects__slide projects__slide--clickable" data-category="web" data-project-id="01" tabindex="0" role="button" aria-label="View details for Online Computer Shop">
                         <div class="projects__card">
                            <div class="projects__image">
                               <img src="assets/img/project-computer-shop.svg" alt="Online Computer Shop project" class="projects__img">
                            </div>
-                           <div class="projects__content">
-                              <span class="projects__subtitle">Full-Stack Web Application</span>
+                           <div class="projects__data">
+                              <span class="projects__number">01</span>
+                              <span class="projects__category">Web</span>
                               <h3 class="projects__title">Online Computer Shop</h3>
-                              <p class="projects__description">E-commerce platform with authentication, products, cart, reviews, orders, AJAX search, and secure CRUD.</p>
-                              <div class="projects__buttons">
-                                 <button type="button" class="projects__details-btn" data-project-id="01">Details</button>
-                                 <a href="https://github.com/romanrazan/Web_Tech_Project_Online_Computer_Shop" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              <p class="projects__description"><span>Technologies used</span>HTML, CSS, JavaScript, PHP, AJAX, MySQL, MVC, Git &amp; GitHub.</p>
+                              <div class="projects__actions">
+                                 <button type="button" class="projects__details-btn" data-project-id="01">View Details <i class="ri-arrow-right-line"></i></button>
+                                 <a href="https://github.com/romanrazan/Web_Tech_Project_Online_Computer_Shop" target="_blank" rel="noopener" class="projects__link projects__github-link">View on GitHub <i class="ri-github-line"></i></a>
                               </div>
                            </div>
                         </div>
                      </article>
 
-                     <article class="projects__slide" data-category="software" data-project-id="02">
+                     <article class="projects__slide projects__slide--clickable" data-category="software" data-project-id="02" tabindex="0" role="button" aria-label="View details for SkillBridge">
                         <div class="projects__card">
                            <div class="projects__image">
                               <img src="assets/img/project-github.svg" alt="SkillBridge project" class="projects__img">
                            </div>
-                           <div class="projects__content">
-                              <span class="projects__subtitle">Software Quality &amp; Testing</span>
+                           <div class="projects__data">
+                              <span class="projects__number">02</span>
+                              <span class="projects__category">Software</span>
                               <h3 class="projects__title">SkillBridge</h3>
-                              <p class="projects__description">A micro-freelancing platform for university students, developed with Agile Scrum and a quality-assurance focus.</p>
-                              <div class="projects__buttons">
-                                 <button type="button" class="projects__details-btn" data-project-id="02">Details</button>
-                                 <a href="https://github.com/romanrazan/SQT_SkillBridge-A-Micro-Freelancing-Platform-for-University-Students" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              <p class="projects__description"><span>Technologies used</span>Agile Scrum, Jira, Trello, Figma, software testing, documentation, Git &amp; GitHub.</p>
+                              <div class="projects__actions">
+                                 <button type="button" class="projects__details-btn" data-project-id="02">View Details <i class="ri-arrow-right-line"></i></button>
+                                 <a href="https://github.com/romanrazan/SQT_SkillBridge-A-Micro-Freelancing-Platform-for-University-Students" target="_blank" rel="noopener" class="projects__link projects__github-link">View on GitHub <i class="ri-github-line"></i></a>
                               </div>
                            </div>
                         </div>
                      </article>
 
-                     <article class="projects__slide" data-category="software" data-project-id="03">
+                     <article class="projects__slide projects__slide--clickable" data-category="software" data-project-id="03" tabindex="0" role="button" aria-label="View details for Shop Management System">
                         <div class="projects__card">
                            <div class="projects__image">
                               <img src="assets/img/project-agritech.svg" alt="Shop Management System project" class="projects__img">
                            </div>
-                           <div class="projects__content">
-                              <span class="projects__subtitle">C# Desktop Application</span>
+                           <div class="projects__data">
+                              <span class="projects__number">03</span>
+                              <span class="projects__category">Software</span>
                               <h3 class="projects__title">Shop Management System</h3>
-                              <p class="projects__description">Desktop system for inventory, sales, customers, billing, authentication, and automated reporting.</p>
-                              <div class="projects__buttons">
-                                 <button type="button" class="projects__details-btn" data-project-id="03">Details</button>
-                                 <a href="https://github.com/romanrazan/C-Sharp-Project-Shop-Management-" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              <p class="projects__description"><span>Technologies used</span>C#, .NET Framework, SQL Server, OOP, Windows desktop UI, Git &amp; GitHub.</p>
+                              <div class="projects__actions">
+                                 <button type="button" class="projects__details-btn" data-project-id="03">View Details <i class="ri-arrow-right-line"></i></button>
+                                 <a href="https://github.com/romanrazan/C-Sharp-Project-Shop-Management-" target="_blank" rel="noopener" class="projects__link projects__github-link">View on GitHub <i class="ri-github-line"></i></a>
                               </div>
                            </div>
                         </div>
                      </article>
 
-                     <article class="projects__slide" data-category="graphics" data-project-id="04">
+                     <article class="projects__slide projects__slide--clickable" data-category="graphics" data-project-id="04" tabindex="0" role="button" aria-label="View details for Train Journey Simulation">
                         <div class="projects__card">
                            <div class="projects__image">
                               <img src="assets/img/project-3d.svg" alt="Train Journey Simulation project" class="projects__img">
                            </div>
-                           <div class="projects__content">
-                              <span class="projects__subtitle">Computer Graphics</span>
+                           <div class="projects__data">
+                              <span class="projects__number">04</span>
+                              <span class="projects__category">Graphics</span>
                               <h3 class="projects__title">Train Journey Simulation</h3>
-                              <p class="projects__description">Animated countryside journey with moving vehicles, scenic elements, and day-to-night transitions.</p>
-                              <div class="projects__buttons">
-                                 <button type="button" class="projects__details-btn" data-project-id="04">Details</button>
-                                 <a href="https://github.com/romanrazan/Computer-Graphics-Project-Journey-By-Train-" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              <p class="projects__description"><span>Technologies used</span>C++, OpenGL, GLUT, animation, transformations, computer graphics, Git &amp; GitHub.</p>
+                              <div class="projects__actions">
+                                 <button type="button" class="projects__details-btn" data-project-id="04">View Details <i class="ri-arrow-right-line"></i></button>
+                                 <a href="https://github.com/romanrazan/Computer-Graphics-Project-Journey-By-Train-" target="_blank" rel="noopener" class="projects__link projects__github-link">View on GitHub <i class="ri-github-line"></i></a>
                               </div>
                            </div>
                         </div>
                      </article>
 
-                     <article class="projects__slide" data-category="database" data-project-id="05">
+                     <article class="projects__slide projects__slide--clickable" data-category="database" data-project-id="05" tabindex="0" role="button" aria-label="View details for Train Ticket Reservation">
                         <div class="projects__card">
                            <div class="projects__image">
                               <img src="assets/img/project-course.svg" alt="Train Ticket Reservation System project" class="projects__img">
                            </div>
-                           <div class="projects__content">
-                              <span class="projects__subtitle">Database Management</span>
+                           <div class="projects__data">
+                              <span class="projects__number">05</span>
+                              <span class="projects__category">Database</span>
                               <h3 class="projects__title">Train Ticket Reservation</h3>
-                              <p class="projects__description">Database-driven booking, cancellation, seat, passenger, train, and reservation management system.</p>
-                              <div class="projects__buttons">
-                                 <button type="button" class="projects__details-btn" data-project-id="05">Details</button>
-                                 <a href="https://github.com/romanrazan/Database_Project-The-Online-Train-Reservation-System-" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              <p class="projects__description"><span>Technologies used</span>Oracle SQL Express, MySQL, relational database design, optimized SQL queries, Git &amp; GitHub.</p>
+                              <div class="projects__actions">
+                                 <button type="button" class="projects__details-btn" data-project-id="05">View Details <i class="ri-arrow-right-line"></i></button>
+                                 <a href="https://github.com/romanrazan/Database_Project-The-Online-Train-Reservation-System-" target="_blank" rel="noopener" class="projects__link projects__github-link">View on GitHub <i class="ri-github-line"></i></a>
                               </div>
                            </div>
                         </div>
                      </article>
 
-                     <article class="projects__slide" data-category="software" data-project-id="06">
+                     <article class="projects__slide projects__slide--clickable" data-category="java" data-project-id="06" tabindex="0" role="button" aria-label="View details for Computer Accessories Shop">
                         <div class="projects__card">
                            <div class="projects__image">
                               <img src="assets/img/project-mobile-shop.svg" alt="Computer Accessories Shop project" class="projects__img">
                            </div>
-                           <div class="projects__content">
-                              <span class="projects__subtitle">Java OOP Application</span>
+                           <div class="projects__data">
+                              <span class="projects__number">06</span>
+                              <span class="projects__category">Java</span>
                               <h3 class="projects__title">Computer Accessories Shop</h3>
-                              <p class="projects__description">Java Swing application with authentication, dashboards, products, orders, payments, and custom PC Builder.</p>
-                              <div class="projects__buttons">
-                                 <button type="button" class="projects__details-btn" data-project-id="06">Details</button>
-                                 <a href="https://github.com/romanrazan/Computer-Accessories-Shop" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              <p class="projects__description"><span>Technologies used</span>Java, Swing, OOP, authentication, product and order management, Git &amp; GitHub.</p>
+                              <div class="projects__actions">
+                                 <button type="button" class="projects__details-btn" data-project-id="06">View Details <i class="ri-arrow-right-line"></i></button>
+                                 <a href="https://github.com/romanrazan/Computer-Accessories-Shop" target="_blank" rel="noopener" class="projects__link projects__github-link">View on GitHub <i class="ri-github-line"></i></a>
                               </div>
                            </div>
                         </div>
                      </article>
 
-                     <article class="projects__slide" data-category="web" data-project-id="07">
+                     <article class="projects__slide projects__slide--clickable" data-category="web" data-project-id="07" tabindex="0" role="button" aria-label="View more projects on GitHub">
                         <div class="projects__card">
                            <div class="projects__image">
                               <img src="assets/img/project-github.svg" alt="More projects on GitHub" class="projects__img">
                            </div>
-                           <div class="projects__content">
-                              <span class="projects__subtitle">Open Source Profile</span>
+                           <div class="projects__data">
+                              <span class="projects__number">07</span>
+                              <span class="projects__category">Web</span>
                               <h3 class="projects__title">More on GitHub</h3>
-                              <p class="projects__description">Explore all seven public repositories and follow my continuing development work.</p>
-                              <div class="projects__buttons">
-                                 <button type="button" class="projects__details-btn" data-project-id="07">Details</button>
-                                 <a href="https://github.com/romanrazan?tab=repositories" target="_blank" rel="noopener" class="projects__link">GitHub <i class="ri-external-link-line"></i></a>
+                              <p class="projects__description"><span>Technologies used</span>PHP, Java, C#, C++, SQL, HTML, CSS, JavaScript, Git &amp; GitHub.</p>
+                              <div class="projects__actions">
+                                 <button type="button" class="projects__details-btn" data-project-id="07">View Details <i class="ri-arrow-right-line"></i></button>
+                                 <a href="https://github.com/romanrazan?tab=repositories" target="_blank" rel="noopener" class="projects__link projects__github-link">View on GitHub <i class="ri-github-line"></i></a>
                               </div>
                            </div>
                         </div>
                      </article>
                   </div>
                </div>
-
-               <div class="projects__navigation">
-                  <button type="button" class="projects__arrow" id="projects-prev-btn" aria-label="Previous projects"><i class="ri-arrow-left-line"></i></button>
-                  <span class="projects__counter" id="projects-counter">01-02 / 07</span>
-                  <div class="projects__dots" id="projects-dots"></div>
-                  <button type="button" class="projects__arrow" id="projects-next-btn" aria-label="Next projects"><i class="ri-arrow-right-line"></i></button>
-               </div>
+               <button type="button" class="projects__button" id="projects-next-btn" aria-label="Next projects">
+                  <i class="ri-arrow-right-s-line" aria-hidden="true"></i>
+               </button>
             </div>
+            <p class="projects__counter" id="projects-counter">01-02 / 07</p>
+            <div class="projects__dots" id="projects-dots"></div>
+            <p class="projects__hint">Click a project card for full details</p>
          </div>
       </section>
 

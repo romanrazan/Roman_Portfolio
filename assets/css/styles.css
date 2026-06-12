@@ -4257,6 +4257,154 @@ html {
    margin-left: .45rem;
 }
 
+/* Project showcase layout */
+#projects .projects__container {
+   max-width: 1280px;
+}
+
+#projects .projects__filters {
+   gap: .65rem;
+   margin-bottom: 2.5rem;
+}
+
+#projects .projects__filter {
+   padding: .65rem 1.35rem;
+   color: var(--title-color);
+   background: hsla(240, 8%, 10%, .82);
+   border-color: var(--border-color);
+   box-shadow: none;
+}
+
+#projects .projects__filter:hover,
+#projects .projects__filter-active {
+   color: var(--title-color);
+   background: hsla(var(--hue), 60%, 64%, .14);
+   border-color: var(--first-color);
+   transform: none;
+}
+
+#projects .projects__slider {
+   max-width: 100%;
+   gap: 1.1rem;
+}
+
+#projects .projects__viewport {
+   border-radius: 1rem;
+}
+
+#projects .projects__card {
+   min-height: 590px;
+   background: linear-gradient(150deg, hsla(240, 8%, 10%, .98), hsla(240, 10%, 6%, .98));
+   border: 1px solid var(--border-color);
+   border-radius: 1rem;
+   box-shadow: none;
+}
+
+#projects .projects__image {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 215px;
+   padding: 1.35rem 1.5rem 0;
+   overflow: hidden;
+}
+
+#projects .projects__img {
+   width: min(100%, 310px);
+   height: 175px;
+   object-fit: contain;
+   padding: 0;
+   background: transparent;
+}
+
+#projects .projects__data {
+   padding: 1.45rem 1.75rem 1.75rem;
+}
+
+#projects .projects__number {
+   display: block;
+   font-size: clamp(2.35rem, 4vw, 3.25rem);
+   line-height: 1;
+   opacity: .72;
+}
+
+#projects .projects__category {
+   margin: .35rem 0 0;
+   font-size: .82rem;
+   letter-spacing: .1em;
+}
+
+#projects .projects__title {
+   max-width: 18ch;
+   margin: 1rem 0 .8rem;
+   font-size: clamp(1.6rem, 2.6vw, 2rem);
+   line-height: 1.14;
+}
+
+#projects .projects__description {
+   margin-bottom: 1.25rem;
+   color: var(--text-color);
+   font-size: .95rem;
+   line-height: 1.65;
+}
+
+#projects .projects__description span {
+   display: block;
+   margin-bottom: .15rem;
+   color: var(--text-color-light);
+   font-size: .82rem;
+}
+
+#projects .projects__actions {
+   flex-direction: row;
+   align-items: center;
+   gap: .8rem 1.15rem;
+   margin-top: auto;
+}
+
+#projects .projects__details-btn {
+   padding: .55rem 1rem;
+   cursor: pointer;
+}
+
+#projects .projects__link {
+   color: var(--first-color-light);
+}
+
+#projects .projects__button {
+   width: 3.6rem;
+   height: 3.6rem;
+   color: var(--title-color);
+   background: var(--body-color);
+   font-size: 1.7rem;
+}
+
+#projects .projects__button:hover {
+   color: var(--body-color);
+   background: var(--first-color);
+}
+
+#projects .projects__counter {
+   margin-top: 1.4rem;
+   font-size: 1.35rem;
+}
+
+#projects .projects__dots {
+   margin-top: .7rem;
+}
+
+#projects .projects__hint {
+   margin-top: .75rem;
+}
+
+[data-theme="light"] #projects .projects__filter {
+   background: rgba(255, 255, 255, .88);
+}
+
+[data-theme="light"] #projects .projects__card {
+   background: linear-gradient(150deg, #fff, #f8f7fc);
+}
+
 @media screen and (max-width: 900px) {
    .roman-tech-grid,
    .roman-achievements-grid {
@@ -4272,5 +4420,37 @@ html {
    .roman-tech-grid,
    .roman-achievements-grid {
       grid-template-columns: 1fr;
+   }
+
+   #projects .projects__slider {
+      gap: .4rem;
+   }
+
+   #projects .projects__button {
+      width: 2.45rem;
+      height: 2.45rem;
+      font-size: 1.2rem;
+   }
+
+   #projects .projects__card {
+      min-height: 545px;
+   }
+
+   #projects .projects__image {
+      height: 185px;
+      padding-inline: 1rem;
+   }
+
+   #projects .projects__img {
+      height: 150px;
+   }
+
+   #projects .projects__data {
+      padding: 1.25rem;
+   }
+
+   #projects .projects__actions {
+      flex-direction: column;
+      align-items: flex-start;
    }
 }
