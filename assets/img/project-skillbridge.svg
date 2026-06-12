@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="SkillBridge">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101b25"/>
+      <stop offset="1" stop-color="#08080f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <ellipse cx="400" cy="290" rx="205" ry="34" fill="#59b6d8" opacity=".12"/>
+  <circle cx="300" cy="170" r="45" fill="#7ec8e8" opacity=".85"/>
+  <circle cx="500" cy="170" r="45" fill="#9b7fe8" opacity=".85"/>
+  <path d="M335 172 C365 125 435 125 465 172" fill="none" stroke="#f2f1f7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M335 198 C365 245 435 245 465 198" fill="none" stroke="#6b5ce7" stroke-width="12" stroke-linecap="round"/>
+  <rect x="277" y="230" width="46" height="65" rx="10" fill="#7ec8e8" opacity=".45"/>
+  <rect x="477" y="230" width="46" height="65" rx="10" fill="#9b7fe8" opacity=".45"/>
+  <text x="400" y="377" text-anchor="middle" fill="#f2f1f7" font-family="Segoe UI,system-ui,sans-serif" font-size="25" font-weight="700">SkillBridge</text>
+  <text x="400" y="410" text-anchor="middle" fill="#7ec8e8" font-family="Segoe UI,system-ui,sans-serif" font-size="14">Agile / Testing / Jira / Figma</text>
+</svg>

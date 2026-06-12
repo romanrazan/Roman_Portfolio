@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Shop Management System">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171121"/>
+      <stop offset="1" stop-color="#08080f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <ellipse cx="400" cy="292" rx="220" ry="38" fill="#8b6cef" opacity=".13"/>
+  <path d="M280 150 H520 L495 220 H305 Z" fill="#9b7fe8" opacity=".8"/>
+  <path d="M305 220 H495 V300 H305 Z" fill="#242038" stroke="#6b5ce7" stroke-width="4"/>
+  <rect x="335" y="242" width="58" height="58" fill="#7ec8e8" opacity=".7"/>
+  <rect x="414" y="242" width="50" height="58" fill="#9b7fe8" opacity=".55"/>
+  <path d="M270 150 L300 112 H500 L530 150" fill="#6b5ce7"/>
+  <circle cx="350" cy="132" r="9" fill="#f2f1f7"/>
+  <circle cx="400" cy="132" r="9" fill="#f2f1f7"/>
+  <circle cx="450" cy="132" r="9" fill="#f2f1f7"/>
+  <text x="400" y="377" text-anchor="middle" fill="#f2f1f7" font-family="Segoe UI,system-ui,sans-serif" font-size="25" font-weight="700">Shop Management System</text>
+  <text x="400" y="410" text-anchor="middle" fill="#9b7fe8" font-family="Segoe UI,system-ui,sans-serif" font-size="14">C# / .NET Framework / SQL Server</text>
+</svg>

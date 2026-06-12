@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Train Journey Simulation">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101d29"/>
+      <stop offset="1" stop-color="#08080f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="570" cy="110" r="38" fill="#f4c86b" opacity=".8"/>
+  <path d="M160 282 L245 190 L320 250 L405 155 L520 282 Z" fill="#223a46"/>
+  <path d="M215 282 L320 215 L405 282 Z" fill="#315568"/>
+  <rect x="260" y="235" width="275" height="64" rx="12" fill="#6b5ce7"/>
+  <rect x="300" y="205" width="145" height="46" rx="10" fill="#9b7fe8"/>
+  <rect x="322" y="217" width="42" height="22" rx="4" fill="#bce8f7"/>
+  <rect x="378" y="217" width="42" height="22" rx="4" fill="#bce8f7"/>
+  <circle cx="320" cy="305" r="24" fill="#11121b" stroke="#9b7fe8" stroke-width="5"/>
+  <circle cx="480" cy="305" r="24" fill="#11121b" stroke="#9b7fe8" stroke-width="5"/>
+  <text x="400" y="377" text-anchor="middle" fill="#f2f1f7" font-family="Segoe UI,system-ui,sans-serif" font-size="25" font-weight="700">Train Journey Simulation</text>
+  <text x="400" y="410" text-anchor="middle" fill="#7ec8e8" font-family="Segoe UI,system-ui,sans-serif" font-size="14">C++ / OpenGL / GLUT / Animation</text>
+</svg>
