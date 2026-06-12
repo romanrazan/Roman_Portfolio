@@ -4191,10 +4191,12 @@ html {
 
 .roman-tech-card,
 .roman-achievement-card {
+   display: block;
    padding: 1.75rem;
    border: 1px solid var(--border-color);
    border-radius: 1rem;
    background: var(--container-color);
+   color: inherit;
    transition: transform .3s ease, border-color .3s ease;
 }
 
@@ -4223,6 +4225,34 @@ html {
 .roman-achievement-card p {
    color: var(--text-color);
    line-height: 1.75;
+}
+
+.roman-achievement-card--link {
+   cursor: pointer;
+}
+
+.roman-achievement-card--link:focus-visible {
+   outline: 2px solid var(--first-color);
+   outline-offset: 4px;
+}
+
+.roman-achievement-action {
+   display: inline-flex;
+   align-items: center;
+   gap: .35rem;
+   margin-top: 1rem;
+   color: var(--first-color-light);
+   font-size: var(--small-font-size);
+   font-weight: var(--font-medium);
+}
+
+.roman-achievement-card--link:hover .roman-achievement-action {
+   gap: .55rem;
+}
+
+.roman-achievement-action i {
+   margin: 0;
+   font-size: 1rem;
 }
 
 .roman-achievement-year {
