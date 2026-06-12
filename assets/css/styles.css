@@ -599,6 +599,11 @@ img {
   margin-bottom: .75rem;
 }
 
+.home__name-line {
+  display: block;
+  width: max-content;
+}
+
 .home__split-wrap {
   margin-bottom: .75rem;
 }
@@ -749,10 +754,13 @@ img {
   }
 
   .home__name {
-    width: max-content;
+    width: auto;
     max-width: none;
-    white-space: nowrap;
     font-size: clamp(2.25rem, 4.2vw, 4rem);
+  }
+
+  .home__name-line {
+    white-space: nowrap;
   }
 
   .home__image {

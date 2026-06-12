@@ -34,9 +34,22 @@ window.addEventListener('load', () => {
 /*=============== HOME SPLIT TEXT ===============*/
 const homeSplit = document.getElementById('home-split')
 if (homeSplit && typeof anime !== 'undefined') {
-   const text = homeSplit.textContent
-   homeSplit.innerHTML = text.split('').map((char) =>
-      `<span class="home__split-char">${char === ' ' ? '&nbsp;' : char}</span>`
+   let lines = []
+
+   try {
+      lines = JSON.parse(homeSplit.dataset.lines || '[]')
+   } catch {
+      lines = []
+   }
+
+   if (!lines.length) {
+      lines = [homeSplit.textContent.trim()]
+   }
+
+   homeSplit.innerHTML = lines.map((line) =>
+      `<span class="home__name-line">${line.split('').map((char) =>
+         `<span class="home__split-char">${char === ' ' ? '&nbsp;' : char}</span>`
+      ).join('')}</span>`
    ).join('')
 
    anime({
