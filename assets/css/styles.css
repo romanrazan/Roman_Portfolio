@@ -4332,6 +4332,22 @@ html {
    margin-left: .45rem;
 }
 
+.contact__connect-links {
+   display: grid;
+   grid-template-columns: repeat(2, max-content);
+   justify-content: start;
+   gap: .65rem;
+}
+
+.contact__card .contact__connect-links .contact__link {
+   margin-left: 0;
+}
+
+.contact__link--facebook {
+   grid-column: 1 / -1;
+   justify-self: center;
+}
+
 /* Project showcase layout */
 #projects .projects__container {
    max-width: 1280px;
