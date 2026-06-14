@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
 
 /*=============== HOME SPLIT TEXT ===============*/
 const homeSplit = document.getElementById('home-split')
-if (homeSplit && typeof anime !== 'undefined') {
+if (homeSplit && typeof anime === 'function' && typeof anime.stagger === 'function') {
    let lines = []
 
    try {
