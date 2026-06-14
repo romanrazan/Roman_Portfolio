@@ -247,7 +247,6 @@ if (typeof ScrollReveal !== 'undefined') {
    sr.reveal('.about__skill', { interval: 100, distance: '40px' })
    sr.reveal('.projects__filters', { interval: 70, distance: '28px' })
    sr.reveal('#projects .section__title', { delay: 100, distance: '30px' })
-   sr.reveal('.projects__card', { interval: 100, distance: '44px', duration: 1200 })
    sr.reveal('.projects__slider', { delay: 200, distance: '36px' })
    sr.reveal('#journey .section__title', { delay: 100, distance: '30px' })
    sr.reveal('.journey__academic-progress', { delay: 120, distance: '32px' })
