@@ -20,7 +20,7 @@
    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Unbounded:wght@200..900&amp;display=swap">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-   <link rel="stylesheet" href="assets/css/styles.css?v=roman-1">
+   <link rel="stylesheet" href="assets/css/styles.css?v=roman-2">
    <script>
       (function () {
          var stored = localStorage.getItem('roman-portfolio-theme');
@@ -763,28 +763,88 @@
 
       <section class="contact section" id="contact" aria-label="Contact">
          <div class="contact__container container grid">
-            <div class="contact__data">
-               <h2 class="section__title contact__title-left">Contact <span>Me</span></h2>
-               <p class="contact__description">Have a project, internship, collaboration, or technical idea in mind? Let us talk.</p>
-               <button type="button" class="button" id="copy-email" data-email="romanrazan2004@gmail.com" data-default-label="Copy Email" aria-pressed="false">
-                  <i class="ri-file-copy-line"></i><span class="contact__button-text">Copy Email</span>
-               </button>
-               <p id="copy-email-status" class="contact__copy-status" aria-live="polite"></p>
+            <div class="contact__left">
+               <div class="contact__intro">
+                  <h2 class="section__title contact__title-left">Contact <span>Me</span></h2>
+                  <p class="contact__description">Open to internships, junior developer roles, and project collaboration. Send a message or use the contact details below.</p>
+                  <button type="button" class="button contact__button" id="copy-email" data-email="romanrazan2004@gmail.com" data-default-label="Copy email" aria-pressed="false">
+                     <i class="ri-file-copy-line contact__button-icon" aria-hidden="true"></i>
+                     <span class="contact__button-text">Copy email</span>
+                  </button>
+                  <p id="copy-email-status" class="contact__copy-status" aria-live="polite"></p>
+               </div>
+
+               <div class="contact__info">
+                  <article class="contact__group">
+                     <h3 class="contact__title">Email</h3>
+                     <a href="mailto:romanrazan2004@gmail.com" class="contact__email contact__address">romanrazan2004@gmail.com</a>
+                  </article>
+                  <article class="contact__group">
+                     <h3 class="contact__title">Location</h3>
+                     <p class="contact__address">Kuratoli, Khilkhet, Dhaka, Bangladesh</p>
+                  </article>
+                  <article class="contact__group">
+                     <h3 class="contact__title">Phone</h3>
+                     <a href="tel:+8801400337927" class="contact__email contact__address">+880 1400-337927</a>
+                  </article>
+                  <article class="contact__group">
+                     <h3 class="contact__title">Social Media</h3>
+                     <div class="contact__links">
+                        <a href="https://www.linkedin.com/in/roman-sheikh-razan-2b82a3399/" target="_blank" rel="noopener" class="contact__link">LinkedIn</a>
+                        <a href="https://github.com/romanrazan" target="_blank" rel="noopener" class="contact__link">GitHub</a>
+                        <a href="https://www.facebook.com/share/1P8BKmxJtL/" target="_blank" rel="noopener" class="contact__link">Facebook</a>
+                     </div>
+                  </article>
+                  <article class="contact__group contact__group--wide">
+                     <h3 class="contact__title">Write Me &amp; We'll Talk</h3>
+                     <div class="contact__links contact__links-messaging">
+                        <a href="https://wa.me/8801400337927" target="_blank" rel="noopener" class="contact__link">WhatsApp</a>
+                        <a href="mailto:romanrazan2004@gmail.com" class="contact__link">Email</a>
+                        <a href="https://www.linkedin.com/in/roman-sheikh-razan-2b82a3399/" target="_blank" rel="noopener" class="contact__link">LinkedIn</a>
+                        <a href="https://www.facebook.com/share/1P8BKmxJtL/" target="_blank" rel="noopener" class="contact__link">Facebook</a>
+                     </div>
+                  </article>
+               </div>
             </div>
 
-            <div class="contact__info">
-               <article class="contact__card"><h3 class="contact__title">Email</h3><p class="contact__address">romanrazan2004@gmail.com</p></article>
-               <article class="contact__card"><h3 class="contact__title">Phone</h3><a href="tel:+8801400337927" class="contact__link">+880 1400-337927</a></article>
-               <article class="contact__card"><h3 class="contact__title">Location</h3><p class="contact__address">Kuratoli, Khilkhet, Dhaka, Bangladesh</p></article>
-               <article class="contact__card contact__card--connect">
-                  <h3 class="contact__title">Connect</h3>
-                  <div class="contact__connect-links">
-                     <a href="https://www.linkedin.com/in/roman-sheikh-razan-2b82a3399/" target="_blank" rel="noopener" class="contact__link">LinkedIn</a>
-                     <a href="https://github.com/romanrazan" target="_blank" rel="noopener" class="contact__link">GitHub</a>
-                     <a href="https://www.facebook.com/share/1P8BKmxJtL/" target="_blank" rel="noopener" class="contact__link contact__link--facebook">Facebook</a>
+            <form class="contact__form" id="contact-form" action="https://formsubmit.co/romanrazan2004@gmail.com" method="POST" accept-charset="UTF-8">
+               <h3 class="contact__form-title">Contact Form</h3>
+               <input type="hidden" name="_subject" value="New message from Roman Sheikh Razan's portfolio">
+               <input type="hidden" name="_template" value="table">
+               <input type="hidden" name="_next" value="https://romanrazan.github.io/Roman_Portfolio/?message=sent#contact">
+               <input type="hidden" name="_url" value="https://romanrazan.github.io/Roman_Portfolio/#contact">
+               <div class="contact__honeypot" aria-hidden="true">
+                  <label for="contact-company">Leave this field empty</label>
+                  <input type="text" id="contact-company" name="_honey" tabindex="-1" autocomplete="off">
+               </div>
+
+               <div class="contact__form-body">
+                  <div class="contact__field">
+                     <label class="contact__label" for="contact-name">Name</label>
+                     <input class="contact__input" type="text" id="contact-name" name="name" placeholder="Your name" autocomplete="name" required>
                   </div>
-               </article>
-            </div>
+                  <div class="contact__field">
+                     <label class="contact__label" for="contact-email">Email</label>
+                     <input class="contact__input" type="email" id="contact-email" name="email" placeholder="your@email.com" autocomplete="email" required>
+                  </div>
+                  <div class="contact__field">
+                     <label class="contact__label" for="contact-message">Message</label>
+                     <textarea class="contact__input contact__textarea" id="contact-message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+                  </div>
+                  <button type="submit" class="button contact__submit">Send Message</button>
+                  <p class="contact__form-status" id="contact-form-status" aria-live="polite"></p>
+               </div>
+
+               <div class="contact__form-footer">
+                  <h4 class="contact__form-footer-title">Open to:</h4>
+                  <ul class="contact__form-footer-list">
+                     <li>Project Collaboration</li>
+                     <li>Internships &amp; Junior Roles</li>
+                     <li>Technical Discussions</li>
+                  </ul>
+                  <p class="contact__form-note">Usually responds within 24 hours.</p>
+               </div>
+            </form>
          </div>
       </section>
    </main>
@@ -799,6 +859,7 @@
    <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
    <script defer src="assets/js/controllers/ThemeController.js?v=3"></script>
    <script defer src="assets/js/controllers/ContactCopyController.js?v=45"></script>
+   <script defer src="assets/js/controllers/ContactFormController.js?v=1"></script>
    <script defer src="assets/js/controllers/AppController.js?v=47"></script>
    <script defer src="assets/js/controllers/HomeTypingController.js?v=2"></script>
    <script defer src="assets/js/controllers/ProjectsController.js?v=7"></script>

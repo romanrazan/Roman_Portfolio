@@ -2917,25 +2917,35 @@ body.project-modal-open {
 /*=============== CONTACT ===============*/
 .contact.section {
   position: relative;
+  isolation: isolate;
   overflow: hidden;
+  padding-bottom: 3.5rem;
+  background-color: hsl(255, 24%, 4%);
 }
 
 .contact.section::before {
   content: '';
   position: absolute;
-  left: -8%;
-  bottom: 8%;
-  width: min(460px, 62vw);
-  height: min(460px, 52vh);
-  background: radial-gradient(
-    circle at center,
-    hsla(var(--hue), 60%, 64%, 0.16) 0%,
-    hsla(var(--hue), 60%, 64%, 0.06) 38%,
-    transparent 72%
-  );
-  filter: blur(48px);
-  pointer-events: none;
+  inset: 0;
   z-index: 0;
+  background-image: url('../img/roman-profile.png');
+  background-repeat: no-repeat;
+  background-position: center 22%;
+  background-size: cover;
+  opacity: .32;
+  filter: saturate(.72) contrast(1.08);
+  pointer-events: none;
+}
+
+.contact.section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(90deg, hsla(270, 100%, 2%, .96) 0%, hsla(350, 70%, 6%, .72) 46%, hsla(255, 100%, 2%, .94) 100%),
+    linear-gradient(180deg, hsla(255, 100%, 2%, .52), hsla(255, 100%, 2%, .9));
+  pointer-events: none;
 }
 
 .contact__container {
@@ -2959,6 +2969,12 @@ body.project-modal-open {
 .contact__title-left {
   text-align: left;
   margin-bottom: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -.035em;
+}
+
+.contact__title-left span {
+  color: inherit;
 }
 
 .contact__description {
@@ -2972,6 +2988,8 @@ body.project-modal-open {
   gap: .5rem;
   margin-bottom: 0;
   margin-top: .15rem;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
   border: 1px solid transparent;
   cursor: pointer;
   pointer-events: auto;
@@ -3054,6 +3072,11 @@ body.project-modal-open {
 .contact__group {
   padding: 1rem 1.05rem;
   border-radius: .75rem;
+  background: hsla(240, 8%, 8%, .75);
+  border: 1px solid var(--glass-border);
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .025);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .contact__group--wide {
@@ -3061,9 +3084,9 @@ body.project-modal-open {
 }
 
 .contact__title {
-  font-size: var(--normal-font-size);
+  font-size: var(--h3-font-size);
   margin-bottom: .5rem;
-  color: var(--first-color);
+  color: var(--first-color-light);
 }
 
 .contact__address {
@@ -3074,7 +3097,7 @@ body.project-modal-open {
 .contact__links {
   display: flex;
   flex-wrap: wrap;
-  gap: .65rem;
+  gap: .55rem;
 }
 
 .contact__link {
@@ -3082,7 +3105,7 @@ body.project-modal-open {
   align-items: center;
   justify-content: center;
   min-width: 5.5rem;
-  padding: .55rem 1rem;
+  padding: .55rem .85rem;
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   color: var(--title-color);
@@ -3112,7 +3135,7 @@ body.project-modal-open {
   display: flex;
   flex-direction: column;
   height: auto;
-  padding: 1.15rem 1.25rem 1.1rem;
+  padding: 1.45rem 1.5rem 1.35rem;
   border-radius: var(--radius-lg);
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
@@ -3122,7 +3145,7 @@ body.project-modal-open {
 }
 
 .contact__form-title {
-  font-size: var(--h3-font-size);
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
   color: var(--title-color);
   margin-bottom: .85rem;
   font-family: var(--title-font);
@@ -3172,13 +3195,22 @@ body.project-modal-open {
 
 .contact__textarea {
   resize: vertical;
-  min-height: 0;
+  min-height: 7.75rem;
+}
+
+.contact__honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .contact__submit {
   align-self: flex-start;
   margin-top: 0;
   margin-bottom: 0;
+  color: hsl(0, 0%, 100%);
 }
 
 .contact__submit:disabled {
@@ -3263,7 +3295,7 @@ body.project-modal-open {
   position: relative;
   padding-left: .85rem;
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+  color: var(--text-color);
   line-height: 1.45;
 }
 
@@ -3289,9 +3321,9 @@ body.project-modal-open {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .contact__container {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.04fr) minmax(0, 1fr);
     align-items: stretch;
     column-gap: 1.75rem;
     row-gap: 0;
@@ -3327,6 +3359,7 @@ body.project-modal-open {
 .footer {
   padding: 1.75rem 0 2.25rem;
   border-top: 1px solid var(--glass-border);
+  background-color: hsl(255, 24%, 4%);
 }
 
 .footer__container {
@@ -3892,13 +3925,19 @@ html {
   -webkit-backdrop-filter: none;
 }
 
+[data-theme="light"] .contact.section {
+  background-color: #f8f7fb;
+}
+
 [data-theme="light"] .contact.section::before {
-  background: radial-gradient(
-    circle at center,
-    rgba(139, 92, 246, 0.1) 0%,
-    rgba(139, 92, 246, 0.04) 38%,
-    transparent 72%
-  );
+  opacity: .1;
+  filter: grayscale(.2) saturate(.6);
+}
+
+[data-theme="light"] .contact.section::after {
+  background:
+    linear-gradient(90deg, rgba(248, 247, 251, .96), rgba(248, 247, 251, .83) 48%, rgba(248, 247, 251, .97)),
+    linear-gradient(180deg, rgba(248, 247, 251, .72), rgba(248, 247, 251, .96));
 }
 
 [data-theme="light"] .contact__form-footer {
@@ -3911,6 +3950,10 @@ html {
 
 [data-theme="light"] .contact__form-note {
   color: #7c3aed;
+}
+
+[data-theme="light"] .contact__title {
+  color: #8b5cf6;
 }
 
 [data-theme="light"] .contact__group {
