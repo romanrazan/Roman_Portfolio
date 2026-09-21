@@ -1460,8 +1460,16 @@ body.project-modal-open {
 }
 
 .project-modal__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
   padding-top: .35rem;
   border-top: 1px solid var(--glass-border);
+}
+
+.project-modal__footer[hidden],
+.project-modal__github[hidden] {
+  display: none;
 }
 
 .project-modal__github {

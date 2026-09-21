@@ -150,13 +150,22 @@
 
       const footer = document.getElementById('project-modal-footer')
       const githubLink = document.getElementById('project-modal-github')
-      if (project.github_url && footer && githubLink) {
+      const liveLink = document.getElementById('project-modal-live')
+      if (githubLink) {
+         githubLink.hidden = !project.github_url
+      }
+      if (project.github_url && githubLink) {
          githubLink.href = project.github_url
          document.getElementById('project-modal-github-text').textContent = project.link_text || 'View on GitHub'
-         footer.hidden = false
-      } else if (footer) {
-         footer.hidden = true
       }
+      if (liveLink) {
+         liveLink.hidden = !project.live_url
+      }
+      if (project.live_url && liveLink) {
+         liveLink.href = project.live_url
+         document.getElementById('project-modal-live-text').textContent = project.live_text || 'Live Demo'
+      }
+      if (footer) footer.hidden = !project.github_url && !project.live_url
 
       modal.hidden = false
       modal.classList.remove('project-modal--closing')
