@@ -2917,35 +2917,8 @@ body.project-modal-open {
 /*=============== CONTACT ===============*/
 .contact.section {
   position: relative;
-  isolation: isolate;
   overflow: hidden;
   padding-bottom: 3.5rem;
-  background-color: hsl(255, 24%, 4%);
-}
-
-.contact.section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background-image: url('../img/roman-profile.png');
-  background-repeat: no-repeat;
-  background-position: center 22%;
-  background-size: cover;
-  opacity: .32;
-  filter: saturate(.72) contrast(1.08);
-  pointer-events: none;
-}
-
-.contact.section::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background:
-    linear-gradient(90deg, hsla(270, 100%, 2%, .96) 0%, hsla(350, 70%, 6%, .72) 46%, hsla(255, 100%, 2%, .94) 100%),
-    linear-gradient(180deg, hsla(255, 100%, 2%, .52), hsla(255, 100%, 2%, .9));
-  pointer-events: none;
 }
 
 .contact__container {
@@ -3359,7 +3332,6 @@ body.project-modal-open {
 .footer {
   padding: 1.75rem 0 2.25rem;
   border-top: 1px solid var(--glass-border);
-  background-color: hsl(255, 24%, 4%);
 }
 
 .footer__container {
@@ -3923,21 +3895,6 @@ html {
   box-shadow: var(--light-card-shadow);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
-}
-
-[data-theme="light"] .contact.section {
-  background-color: #f8f7fb;
-}
-
-[data-theme="light"] .contact.section::before {
-  opacity: .1;
-  filter: grayscale(.2) saturate(.6);
-}
-
-[data-theme="light"] .contact.section::after {
-  background:
-    linear-gradient(90deg, rgba(248, 247, 251, .96), rgba(248, 247, 251, .83) 48%, rgba(248, 247, 251, .97)),
-    linear-gradient(180deg, rgba(248, 247, 251, .72), rgba(248, 247, 251, .96));
 }
 
 [data-theme="light"] .contact__form-footer {
